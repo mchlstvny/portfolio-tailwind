@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Michele's Portfolio</title>
-    <script src="./tailwind.config.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
-    
 </head>
 
 <body class="overflow-x-hidden leading-8" style="font-family: Outfit;">
@@ -28,8 +26,8 @@
             <li><a href="#contact">Contact Me</a></li>
         </ul> 
  
-        <div class="flex items-center gap-4">
-            <button><img src="images/moon_icon.png" alt="moon-icon" class="w-6"> </button>
+        <div class="flex items-center gap-4 ml-auto"></div>
+            <!-- <button><img src="images/moon_icon.png" alt="moon-icon" class="w-6"> </button> -->
 
             <a href="#contact"
             class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">
@@ -52,7 +50,7 @@
                   </div>
                   <li><a href="#top" onclick="closeMenu()">Home</a></li>
                   <li><a href="#about" onclick="closeMenu()">About Me</a></li>
-                  <li><a href="#service" onclick="closeMenu()">Services</a></li>
+                  <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
                   <li><a href="#project" onclick="closeMenu()">Projects</a></li>
                   <li><a href="#contact" onclick="closeMenu()">Contact Me</a></li>
                 </ul>
@@ -87,16 +85,15 @@
             <div class="max-w-max mx-auto relative">
             <img src="images/user-image.png" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none !grayscale-0"></img>
                 <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15) flex items-center justify-center]">
-                    <img src="images/circular-text.png" alt="" class="w-full animate-spin_slow">
+                    <img src="images/circular-text.png" alt="" class="w-full spin-slow">
                     <img src="images/dev-icon.png" alt="" class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    
                 </div>
             </div>
-      
+        
                 <div class="flex-1">
-                    <p class="mb-10 max-width-2xl" style="font-family: Ovo;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit consectetur nibh eu vehicula.
-                    Maecenas vulputate gravida magna, vel ornare diam tincidunt quis. Aliquam erat volutpat. Fusce vitae vulputate 
-                    arcu. Fusce eu maximus augue, quis porta risus.</p>
+                    <p class="mb-10 max-width-2xl" style="font-family: Ovo; text-align: justify;">As an Informatics student at Universitas Ciputra Surabaya aiming to be a full-stack software engineer with a passion for UI/UX design, 
+                    I also express my creativity through photography and keyboard playing. This portfolio is a glimpse into my journey as both a tech-minded student and a creative individual, reflecting my commitment 
+                    to continuous learning, my creative spark, and my ability to adapt to new things.</p>
                     
                     <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-width-2xl">
                          <!-- Languages -->
@@ -113,11 +110,11 @@
                             <p class="text-gray-600 text-sm">Undergraduate B. Informatic Engineering</p>
                         </li>
 
-                        <!-- Projects -->
+                        <!-- Organization Experience -->
                         <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_#000]">
                             <img src="images/project-icon.png" alt="" class="w-7 mt-3">
-                            <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
-                            <p class="text-gray-600 text-sm">Built 3 mini projects</p>
+                            <h3 class="my-4 font-semibold text-gray-700">Organization</h3>
+                            <p class="text-gray-600 text-sm">Informatic Student Union, FDU Kristen</p>
                         </li>
                     </ul>
 
@@ -148,40 +145,40 @@
             <h4 class="text-center mb-2 text-lg" style="font-family: Ovo;">What I Can Do</h4>
             <h2 class="text-center text-5xl" style="font-family: Ovo;">My Skills</h2>
             <p class="text-center max-w-2xl mx-auto mt-5 mb-12" style="font-family: Ovo;">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            I am continuously developing my skillset, with current strengths in the following areas.
             </p>
         
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-10">
-            <!-- Card 1 -->
-            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            <!-- FullStack Dev -->
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+            style="text-align: justify;">
                 <img src="images/web-icon.png" alt="" class="w-10">
-                <h3 class="text-lg my-4 text-gray-700">Web Design</h3>
-                <p class="text-sm text-gray-600 leading-5">Web Development is the process of building, programming...</p>
-                <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="images/right-arrow-dark.png" alt="" class="w-4"></a>
+                <h3 class="text-lg my-4 text-gray-700">FullStack Dev</h3>
+                <p class="text-sm text-gray-600 leading-5">I can build and program complete web applications, handling both front-end and back-end development.</p>
             </div>
         
-            <!-- Card 2 -->
-            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            <!-- UI/UX -->
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+            style="text-align: justify;">
                 <img src="images/web-icon.png" alt="" class="w-10">
                 <h3 class="text-lg my-4 text-gray-700">UI/UX</h3>
-                <p class="text-sm text-gray-600 leading-5">Designing user-friendly and attractive interfaces...</p>
-                <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="images/right-arrow-dark.png" alt="" class="w-4"></a>
+                <p class="text-sm text-gray-600 leading-5">I design intuitive and visually appealing user interfaces that enhance user experience.</p>
             </div>
         
             <!-- Card 3 -->
-            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+            style="text-align: justify;">
                 <img src="images/web-icon.png" alt="" class="w-10">
-                <h3 class="text-lg my-4 text-gray-700">Backend Dev</h3>
-                <p class="text-sm text-gray-600 leading-5">Creating the logic and database for your application...</p>
-                <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="images/right-arrow-dark.png" alt="" class="w-4"></a>
+                <h3 class="text-lg my-4 text-gray-700">Design</h3>
+                <p class="text-sm text-gray-600 leading-5">I create visually engaging graphics and designs for various media, conveying messages effectively.</p>
             </div>
         
             <!-- Card 4 -->
-            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"
+            style="text-align: justify;">
                 <img src="images/web-icon.png" alt="" class="w-10">
-                <h3 class="text-lg my-4 text-gray-700">Graphic Design</h3>
-                <p class="text-sm text-gray-600 leading-5">Visualizing concepts through creative layouts and art...</p>
-                <a href="" class="flex items-center gap-2 text-sm mt-5">Read more <img src="images/right-arrow-dark.png" alt="" class="w-4"></a>
+                <h3 class="text-lg my-4 text-gray-700">PVG</h3>
+                <p class="text-sm text-gray-600 leading-5">I capture compelling visuals through photography and create engaging video content.</p>
             </div>
         </div>
 
@@ -189,108 +186,121 @@
         <div id="project" class="w-full px-[12%] py-10 scroll-mt-20">
             <h4 class="text-center mb-2 text-lg" style="font-family: Ovo;">My Portfolio</h4>
             <h2 class="text-center text-5xl" style="font-family: Ovo;">My latest work</h2>
-            <p class="text-center max-w-2xl mx-auto mt-5 mb-12" style="font-family: Ovo;">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12" style="font-family: Ovo;">Take a look at some of my latest work, highlighting key projects and capabilities.</p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10 gap-5">
                 <div class="aspect-square bg-[url('images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
-                            <h2 class="font-semibold">Frontend Project</h2>
-                            <p class="text-sm text-gray-700">Web Design</p>
+                            <h2 class="font-semibold">Hangman Game</h2>
+                            <p class="text-sm text-gray-700">Python</p>
                         </div>
                         <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="images/send-icon.png" alt="" class="w-5">
+                            <a href="https://github.com/mchlstvny/hangman-python.git" target="_blank">
+                                <img src="images/send-icon.png" alt="" class="w-5">
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="aspect-square bg-[url('images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
-                            <h2 class="font-semibold">Frontend Project</h2>
-                            <p class="text-sm text-gray-700">Web Design</p>
+                            <h2 class="font-semibold">Valentine Card</h2>
+                            <p class="text-sm text-gray-700">HTML, CSS</p>
                         </div>
                         <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="images/send-icon.png" alt="" class="w-5">
+                            <a href="https://mchlstvny.github.io/valentine-card/" target="_blank">
+                                <img src="images/send-icon.png" alt="" class="w-5">
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="aspect-square bg-[url('images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
-                            <h2 class="font-semibold">Frontend Project</h2>
-                            <p class="text-sm text-gray-700">Web Design</p>
+                            <h2 class="font-semibold">Personal Portfolio (1)</h2>
+                            <p class="text-sm text-gray-700">Bootstrap, JS</p>
                         </div>
                         <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="images/send-icon.png" alt="" class="w-5">
+                            <a href="https://mchlstvny.github.io/personal-portfolio/" target="_blank">
+                                <img src="images/send-icon.png" alt="" class="w-5">
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="aspect-square bg-[url('images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
-                            <h2 class="font-semibold">Frontend Project</h2>
-                            <p class="text-sm text-gray-700">Web Design</p>
+                            <h2 class="font-semibold">Personal Portfolio (2)</h2>
+                            <p class="text-sm text-gray-700">Tailwind, JS</p>
                         </div>
                         <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="images/send-icon.png" alt="" class="w-5">
+                            <a href="https://github.com/mchlstvny/portfolio-tailwind.git/" target="_blank">
+                                <img src="images/send-icon.png" alt="" class="w-5">
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="aspect-square bg-[url('images/work-1.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
-                            <h2 class="font-semibold">Frontend Project</h2>
-                            <p class="text-sm text-gray-700">Web Design</p>
+                            <h2 class="font-semibold">Short Film for Religion ALP</h2>
+                            <p class="text-sm text-gray-700">Premiere Pro</p>
                         </div>
                         <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="images/send-icon.png" alt="" class="w-5">
+                            <a href="https://youtu.be/HmAWtIIlGzM?si=3Ho4rZtmEe_-41Ga" target="_blank">
+                                <img src="images/send-icon.png" alt="" class="w-5">
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="aspect-square bg-[url('images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
-                            <h2 class="font-semibold">Frontend Project</h2>
-                            <p class="text-sm text-gray-700">Web Design</p>
+                            <h2 class="font-semibold">Crochet by Lee</h2>
+                            <p class="text-sm text-gray-700">CSS, Bootstrap</p>
                         </div>
                         <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="images/send-icon.png" alt="" class="w-5">
+                            <a href="https://github.com/mchlstvny/praktikumBoostrap-webpro.git" target="_blank">
+                                <img src="images/send-icon.png" alt="" class="w-5">
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="aspect-square bg-[url('images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
-                            <h2 class="font-semibold">Frontend Project</h2>
-                            <p class="text-sm text-gray-700">Web Design</p>
+                            <h2 class="font-semibold">Daily Task Manager</h2>
+                            <p class="text-sm text-gray-700">Java</p>
                         </div>
                         <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="images/send-icon.png" alt="" class="w-5">
+                            <a href="hhttps://github.com/mchlstvny/DailyTaskManager.java.git" target="_blank">
+                                <img src="images/send-icon.png" alt="" class="w-5">
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="aspect-square bg-[url('images/work-4.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
                     <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                         <div>
-                            <h2 class="font-semibold">Frontend Project</h2>
-                            <p class="text-sm text-gray-700">Web Design</p>
+                            <h2 class="font-semibold">Photography Gallery</h2>
+                            <p class="text-sm text-gray-700">PVG</p>
                         </div>
                         <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                            <img src="images/send-icon.png" alt="" class="w-5">
+                            <a href="https://mchlstvny.github.io/valentine-card/" target="_blank">
+                                <img src="images/send-icon.png" alt="" class="w-5">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500">Show more
-                <img src="images/right-arrow-bold.png" alt="" class="w-4">
-            </a>
         </div>
 
         <!-- Contact Section -->
         <div id="contact" class="w-full px[12%] py-10 scroll-mt-20 bg-[url('images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center">
             <h4 class="text-center mb-2 text-lg" style="font-family: Ovo;">Connect with me</h4>
             <h2 class="text-center text-5xl" style="font-family: Ovo;">Get in touch</h2>
-            <p class="text-center max-w-2xl mx-auto mt-5 mb-12" style="font-family: Ovo;">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12" style="font-family: Ovo;">I'd love to hear from you! Use the form below or connect through my social links.</p>
 
             <form action="" class="max-w-2xl mx-auto">
                 <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
@@ -316,10 +326,10 @@
             <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] my-12 py-6">
                 <p>© 2025 Michele Stevany Venda Dati. All rights reserved.</p>
                 <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">Linkedin</a></li>
-                    <li><a href="#">Twitter</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/mchlstvny/">Instagram</a></li>
+                    <li><a target="_blank" href="https://github.com/mchlstvny">Github</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/michele-stevany-venda-dati-42832a271/">Linkedin</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/michele-stevany-venda-dati-42832a271/">Facebook</a></li>
                 </ul>
             </div>
          </div>
